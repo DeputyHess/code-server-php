@@ -49,7 +49,7 @@ jobs:
       - name: Download release artifacts
         uses: robinraju/release-downloader@v1.4
         with:
-          repository: "coder/code-server"
+          repository: "DeputyHess/code-server-php"
           tag: v${{ steps.version.outputs.version }}
           fileName: "*.deb"
           out-file-path: "release-packages"
