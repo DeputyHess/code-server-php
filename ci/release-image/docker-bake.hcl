@@ -14,7 +14,7 @@ target "code-server" {
     dockerfile = "ci/release-image/Dockerfile"
     tags = [
         "ghcr.io/deputyhess/code-server-php:latest",
-        notequal("latest",VERSION) ? "ghcr.io/DeputyHess/code-server-php:${VERSION}" : "",
+        notequal("latest",VERSION) ? "ghcr.io/deputyhess/code-server-php:${VERSION}" : "",
     ]
     platforms = ["linux/amd64", "linux/arm64"]
 }
